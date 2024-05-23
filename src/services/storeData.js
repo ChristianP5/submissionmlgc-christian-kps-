@@ -3,7 +3,7 @@ const { Firestore } = require('@google-cloud/firestore');
 
 const storeData = async(id, data)=>{
     const db = new Firestore({
-        projectId: 'christian-serta-mulia-project',
+        projectId: 'submissionmlgc-christian-kps',
     });
 
     const predictionsCollection = db.collection('Predictions');

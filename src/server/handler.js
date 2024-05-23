@@ -4,7 +4,7 @@ const storeData = require('../services/storeData');
 
 const postPredictHandler = async(request, h)=>{
 
-    console.log('Entered Post Predict Handler');
+    
     const { image } = request.payload;
     const { model } = request.server.app;
 
@@ -28,7 +28,7 @@ const postPredictHandler = async(request, h)=>{
     })
 
     response.code(201);
-    console.log('Left Post Predict Handler');
+    
     return response;
 }
 
