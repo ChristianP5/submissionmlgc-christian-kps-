@@ -6,7 +6,7 @@ const storeData = async(id, data)=>{
         projectId: 'submissionmlgc-christian-kps',
     });
 
-    const predictionsCollection = db.collection('Predictions');
+    const predictionsCollection = db.collection('predictions');
     return predictionsCollection.doc(id).set(data);
 }
 
