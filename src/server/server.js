@@ -9,7 +9,7 @@ dotenv.config()
 
 const init = async()=>{
     const server = Hapi.server({
-        host: 'localhost',
+        host: '0.0.0.0',
         port: 3000,
         routes: {
             cors: {
